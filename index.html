@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Block Painter</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script  src="https://code.jquery.com/jquery-3.3.1.js"  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="  crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>Block Party!!</h1>
+    <div id="container">
+        <table id="box"></table>
+    </div>
+    <div id="controls">
+        <div class="label">Rows</div>
+        <div class="label">Columns</div>
+        <div class="label">Height</div>
+        <div class="label">Width</div>
+    </div>
+    
+    <div id="controls">
+        <input type="number" name="row" id="row" value=10>
+        <input type="number" name="col" id="col" value=10>
+        <input type="number" name="height" id="height" value=20>
+        <input type="number" name="width" id="width" value=20>
+    </div>
+    <div id="controls2">
+        <button id="make">Create</button>
+    </div>
+    <div id="controls3">
+        <div class="color" id="blue"></div>
+        <div class="color" id="red"></div>
+        <div class="color" id="purple"></div>
+        <div class="color" id="orange"></div>
+        <div class="color" id="white"></div>
+    </div>
+
+
+<script src="block.js"></script>
+</body>
+</html>
