@@ -12,10 +12,10 @@ var block = {
                 newBox.attr("id", String(i)+"x"+String(j));
                 newBox.on("click", function() {
                     if(this.value == block.color) {
-                        $("#" + String(this.id)).attr("style", "background: black;")
+                        $("#" + String(this.id)).attr("style", "background: black; height: "+ String(block.height) + "px; width: "+ String(block.width) + "px;")
                         this.value = "black"
                     } else {
-                        $("#" + String(this.id)).attr("style", "background: " +block.color +";")
+                        $("#" + String(this.id)).attr("style", "background: " +block.color +"; height: "+ String(block.height) + "px; width: "+ String(block.width) + "px;")
                         this.value = block.color;
                     }
                 })
