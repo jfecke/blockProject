@@ -7,7 +7,7 @@ var block = {
     create: function() {
         for (var i = 0; i <= this.rows; i++) {
             var newRow = $("<tr>");
-            for (var j = 0; j <= this.columns; j++) {
+            for (var j = 1; j <= this.columns; j++) {
                 var newBox = $("<td>");
                 newBox.attr("id", String(i)+"x"+String(j));
                 newBox.on("click", function() {
