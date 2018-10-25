@@ -9,7 +9,7 @@ var block = {
             var newRow = $("<tr>");
             for (var j = 1; j <= this.columns; j++) {
                 var newBox = $("<td>");
-                newBox.attr("id", String(i)+String(j));
+                newBox.attr("id", String(i)+"x"+String(j));
                 newBox.on("click", function() {
                     if(this.value == block.color) {
                         $("#" + String(this.id)).attr("style", "background: black;")
